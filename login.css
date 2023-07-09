@@ -1,10 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://th.bing.com/th/id/R.6ebed0e6a9db636e35478e666a08f7e8?rik=SrVaAJTa6Er9vQ&pid=ImgRaw&r=0');
+}
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color:transparent;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: whitesmoke;
   }
 
   h2 {

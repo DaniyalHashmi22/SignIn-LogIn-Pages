@@ -1,60 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-  }
+html {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://th.bing.com/th/id/R.6ebed0e6a9db636e35478e666a08f7e8?rik=SrVaAJTa6Er9vQ&pid=ImgRaw&r=0');
+}
 
-  .container {
-    box-shadow: 0 5px 3px 2px gray;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.app{
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  background: transparent;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h1{
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz{
+  padding: 20px 0;
+}
+.quiz h2{
+font-size: 18px;
+color: dodgerblue;
+font-weight: 600;
+}
+.btn{
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: #222;
+  color: #fff;
 
-  .form-group {
-    margin-bottom: 20px;
-  }
-
-
- #next{
-    background-color: #f7ab47;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-
-  #next:hover {
-    background-color: orange;
-     box-shadow: 0 2px  3px  2px rgb(232, 197, 133);
-  }
-
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #option{
-    width: 90%;
-    height: 50px;
-    background-color: white;
-    color:black;
-    border: 0.2px solid  rgba(211, 211, 211, 0.61);
-    text-align: left;
-    border-radius: 9px;
-
-  }
-  #option:hover{
-    background-color:orange;
-    cursor: pointer;
-    border: 0px ;
-  }
+}
+#next-btn{
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
+}
